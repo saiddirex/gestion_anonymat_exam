@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<?php
+include('connexion.php')
+?>
+<html>
+<head>
+    <style>
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 1px solid ;
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="center">
+
+    <form method="post" enctype="multipart/form-data" action="uploadf1.php">
+        <p>
+            <input type="file" name="fichier" size="30">
+            <input type="submit" name="upload" value="Uploader">
+        </p>
+
+        <button type="button" onclick="window.open('demo.php')">Fichier Administration</button>
+        </br></br>
+        <input type="hidden" name="nummat" value="<?PHP echo $rowMatiere['NumMatiere'];?>">
+        </br></br>
+        <button type="button" onclick="window.open('demo2.php')">Fichier Profs</button>
+
+    </form>
+    <form method="post" enctype="multipart/form-data" action="uploadf2.php">
+        <p>
+            <input type="file" name="fichier" size="30">
+            <input type="submit" name="upload" value="Uploader">
+        </p>
+
+        <button type="button" onclick="window.open('untitled.php')">Fichier des Notes</button>
+    </form>
+</div>
+
+</body>
+</html>
