@@ -1,9 +1,7 @@
 <?php
 include("session.php");
-if($_SESSION['categorie'] == 'AD')
-  include("Admin.php");
-else
-  include("viewUser.php");
+if($_SESSION['categorie'] == 'AD') include("Admin.php");
+else include("viewUser.php");
 ?>
 
 <html>

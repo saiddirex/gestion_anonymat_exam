@@ -33,31 +33,28 @@
 			  $_SESSION['username'] = $username;
 			  $_SESSION['password'] = $password;
 
-		  	if($row['actif']==1){
+		    if($row['actif']==1){
 
 			  $date = date("Y-m-d H:i:s");
-
 			  $sql="UPDATE users SET derniere_connexion='$date' WHERE username = '$username'";
 			  $res = mysqli_query($db,$sql);
 			 
-			  if($categorie == 'AD')
-			  {
+					if($categorie == 'AD')
+					{
 
-				   header("location: accueilAdmin.php");
-			  }
-			  else
-			  {
-				   header("location: choix.php");
-			  }
-			}
-
-			else 
+						header("location: accueilAdmin.php");
+					}
+					else
+					{
+						header("location: choix.php");
+					}
+			}else 
 			{
-
+				//modification du mot de passe a la premiere connexion
 				$date = date("Y-m-d H:i:s");
 				$sql="UPDATE users SET derniere_connexion='$date',actif=1 where username = '$username'";
 			    $res = mysqli_query($db,$sql);
-			    	header("location: modifierMotPasse.php");
+			    	header("location: viewModifierMotPasse.php");
 			}
 		  }
       

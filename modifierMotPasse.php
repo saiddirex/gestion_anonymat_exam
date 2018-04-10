@@ -1,5 +1,5 @@
 <?php
-	include('viewModifierMotPasse.php');
+	include('user.php');
 
 	if($_SERVER["REQUEST_METHOD"] == "POST")
 	{
@@ -38,7 +38,7 @@
 			}
 			else
 			{
-				echo "le mot de passe actuel éroné";
+				echo "le mot de passe actuel erone";
 			}
 
     }

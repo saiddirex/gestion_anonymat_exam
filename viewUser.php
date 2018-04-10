@@ -51,8 +51,8 @@
             <li><a href="supprimerMonCompte.php">Supprimer mon Compte</a></li>
             <li role="separator" class="divider"></li>
             <li><a>Mise à jour de :</a></li>
-            <li><a href="modifierMotPasse.php"> - Mon mot de passe</a></li>
-            <li><a href="modifierNomPrenom.php"> - Mon nom et prénom </a></li>
+            <li><a href="viewModifierMotPasse.php"> - Mon mot de passe</a></li>
+            <li><a href="viewModifierNomPrenom.php"> - Mon nom et prénom </a></li>
             <li role="separator" class="divider"></li>
             <li><a href="logout.php">Se déconnecter</a></li>
           </ul>

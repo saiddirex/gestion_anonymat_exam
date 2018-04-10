@@ -43,14 +43,14 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-      <li><a href="choixAnonymat.php">Paramétres d'anonymat</a></li>
-        <li><a href="miseAjourBase.php">Mise à jour de la base de données </a></li>
+      <li><a href="choixAnonymatView.php">Paramétres d'anonymat</a></li>
+        <li><a href="miseAjourBaseView.php">Mise à jour de la base de données </a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestion des comptes <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="ajouter.php">Créer un compte</a></li>
-            <li><a href="supprimerParAdmin.php">Supprimer un compte</a></li>
-            <li><a href="modifierParAdmin.php">Modifier le mot de passe d'un compte</a></li>
+            <li><a href="viewSupprimerParAdmin.php">Supprimer un compte</a></li>
+            <li><a href="viewmodifierParAdmin.php">Modifier le mot de passe d'un compte</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="historiquesComptesView.php">Etat des comptes</a></li>
           </ul>
@@ -62,7 +62,7 @@
           <ul class="dropdown-menu">
             <li role="separator" class="divider"></li>
             <li><a>Mise à jour de :</a></li>
-            <li><a href="modifierMotPasse.php"> - Mon mot de passe</a></li>
+            <li><a href="viewModifierMotPasse.php"> - Mon mot de passe</a></li>
             <li><a href="modifierNomPrenom.php"> - Mon nom et prénom </a></li>
             <li role="separator" class="divider"></li>
             <li><a href="logout.php">Se déconnecter</a></li>

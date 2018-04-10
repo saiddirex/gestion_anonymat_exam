@@ -1,5 +1,5 @@
 <?php
-include('viewSupprimerParAdmin.php');
+include('welcomeAdmin.php');
 
 	
 	if($_SESSION['categorie'] == 'AD')
@@ -20,7 +20,8 @@ include('viewSupprimerParAdmin.php');
 			{
 				if($password1 == $password2)
 				{
-                $sql = "UPDATE users SET delet=1 where username = '$username'";
+				$sql = "UPDATE users SET delet=1 where username = '$username'";
+				//$sql = "delete from users  where username = '$username'";
 				$res = mysqli_query($db,$sql);
 				if(!$res)
 				{
@@ -29,7 +30,7 @@ include('viewSupprimerParAdmin.php');
 				else
 				{
 					echo "compte supprimé ";
-					//header("location:accueilAdmin.php");
+					header("location:accueilAdmin.php");
 				}
 			}
 			else
@@ -52,6 +53,3 @@ include('viewSupprimerParAdmin.php');
 		//header("location:login.php");
 	}
 ?>
-
-  
-

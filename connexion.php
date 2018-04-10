@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "saiddirex";
+$password = "";
 $dbname="anonymat";
 $db = mysqli_connect($servername, $username, $password,$dbname);
 

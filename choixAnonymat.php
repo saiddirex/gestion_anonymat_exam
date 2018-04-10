@@ -1,5 +1,5 @@
 <?php
-include("choixAnonymatView.php");
+include("welcomeAdmin.php");
 if (isset($_POST['Validerbtn']))
 {
 	$choix = $_POST['choix'];
@@ -24,7 +24,7 @@ if (isset($_POST['Validerbtn']))
 
     	$reqchoix = "UPDATE type_anonyme SET type = '$type'";
     	$resultatchoix = mysqli_query($db,$reqchoix);
-    	//header("location:accueilAdmin.php");
+        header("location:accueilAdmin.php");
     }
     else
     	echo "Votre mot de passe est incorrect \n";

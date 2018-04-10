@@ -1,5 +1,5 @@
 <?php
-include("miseAjourBaseView.php");
+include("welcomeAdmin.php");
 if($_SESSION['categorie'] == 'AD')
 {
 	if($_POST)
